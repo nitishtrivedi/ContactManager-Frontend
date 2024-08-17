@@ -1,0 +1,13 @@
+.welcome-page-content {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.button-div {
+  margin-top: 50px;
+}
+.description {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+}

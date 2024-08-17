@@ -1,0 +1,14 @@
+.header {
+  background-color: #b3d9ff;
+}
+.header-link {
+  text-decoration: none;
+  color: #1a1b1f;
+}
+.header-link:hover {
+  text-decoration: none;
+}
+.flex-ctr {
+  display: flex;
+  justify-content: space-between;
+}

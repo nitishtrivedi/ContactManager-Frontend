@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="header">
+  <div class="container">
+    <div class="flex-ctr">
+      <div class="site-header">
+        <span class="app-name">
+          <a routerLink="/" class="header-link">Contacts Manager</a>
+        </span>
+      </div>
+      <div class="menu-ctr">
+        <mat-menu #appMenu="matMenu">
+          <button mat-menu-item routerLink="/">Home</button>
+          <button mat-menu-item routerLink="add">Add Contacts</button>
+          <button mat-menu-item routerLink="view">View Contacts</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="appMenu">Menu</button>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,63 @@
+<div class="add-contact-header">
+  <h3>Add a New Contact</h3>
+</div>
+<div class="add-contact-form-div">
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+    <table class="add-contact-table">
+      <tr>
+        <td>
+          <mat-card appearance="outlined">
+            <mat-card-content>
+              <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input
+                  matInput
+                  name="name"
+                  [(ngModel)]="contact.name"
+                  required
+                />
+              </mat-form-field>
+            </mat-card-content>
+          </mat-card>
+        </td>
+        <td>
+          <mat-card appearance="outlined">
+            <mat-card-content>
+              <mat-form-field>
+                <mat-label>Phone Number</mat-label>
+                <input
+                  matInput
+                  name="phone"
+                  [(ngModel)]="contact.phone"
+                  required
+                />
+              </mat-form-field>
+            </mat-card-content>
+          </mat-card>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-card appearance="outlined">
+            <mat-card-content>
+              <mat-form-field>
+                <mat-label>E-Mail</mat-label>
+                <input
+                  matInput
+                  name="email"
+                  [(ngModel)]="contact.email"
+                  required
+                />
+              </mat-form-field>
+            </mat-card-content>
+          </mat-card>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div class="add-form-btn">
+    <button mat-stroked-button type="submit" (click)="onSubmit()">
+      Add Contact
+    </button>
+  </div>
+</div>
