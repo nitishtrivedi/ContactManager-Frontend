@@ -6,12 +6,12 @@
   text-align: center;
 }
 .add-contact-table td {
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 .add-contact-form-div {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 20%;
+  left: 25%;
 }
 .add-contact-header {
   text-align: center;

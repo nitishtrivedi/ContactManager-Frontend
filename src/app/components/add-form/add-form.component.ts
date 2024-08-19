@@ -36,7 +36,6 @@ export class AddFormComponent {
   onSubmit(): void {
     this.contactService.addContact(this.contact).subscribe(
       (response) => {
-        console.log('Contact Added Successfully', response);
         this.toaster.success('Contact Added Successfully', 'Add Contact', {
           timeOut: 4000,
           positionClass: 'toast-top-right',
